@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.barra{
+    position: relative;
+    margin-top: 8vh;
+    margin-left: 8vh;
+    background-color: rgb(148, 144, 144);
+    width: 90%;
+    height: 7vh;
+    opacity: 40%;
+    border-radius: 10vh;
+    
+}
+
+.btn-mode{
+    position: absolute;
+    left: 176vh;
+    margin: -0.5vh;
+    padding: 1vh;
+    border-radius: 1vh;
+}
+
+h2{
+    position: absolute;
+    left: 10vh;
+}
