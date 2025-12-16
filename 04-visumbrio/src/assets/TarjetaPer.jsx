@@ -1,9 +1,9 @@
 
-export const TarjetaPer = ({ nme, description, image }) => {
+export const TarjetaPer = ({ nme, description, image, boton }) => {
     return (
         <div className="text-center">
             <div className="card character-card d-flex justify-content-center align-items-center">
-                <img src={image} alt={nme} className="img-fluid character-img" />
+                <img src={image} alt={nme} className="img-fluid character-img " />
             </div>
 
 

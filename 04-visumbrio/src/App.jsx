@@ -6,7 +6,7 @@ import { Footer } from './assets/Footer';
 
 
 
-export const App = () => {
+export const App = ({TextoBoton}) => {
     return (
         <div className="container-fluid p-0">
 
@@ -83,7 +83,7 @@ export const App = () => {
                 </p>
 
                 <div className="d-flex justify-content-center mt-4">
-                    <button className="btn btn-dark px-4">
+                    <button className="btn btn-dark px-4 ">
                         Ir al cómic
                     </button>
                 </div>
@@ -141,7 +141,7 @@ export const App = () => {
             <section className="container text-center my-5">
 
                 <h2 className="fw-bold mb-2">INTEGRANTES</h2>
-
+                             
                 <p className="text-muted px-5 mt-5">
                     Te presentamos a quienes dan vida a este proyecto, compartiendo su visión
                     y pasión por comprender las transformaciones sociales en momentos difíciles.
