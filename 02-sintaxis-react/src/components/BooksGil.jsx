@@ -6,4 +6,4 @@ export function BooksGil ({libro, nombre, descri}) {
         <p>{descri}</p>
         </>
     )
-}
+} 

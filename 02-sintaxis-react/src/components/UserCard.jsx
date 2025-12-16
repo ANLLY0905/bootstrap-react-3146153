@@ -6,4 +6,4 @@ export function UserCard ({image, userName}) {
         <small>{userName}</small>
         </>
     )
-}
+} 

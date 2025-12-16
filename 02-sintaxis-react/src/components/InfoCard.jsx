@@ -5,4 +5,4 @@ export function InfoCard () {
             <button>Click aquí</button>
         </div>
     )
-}
+} 

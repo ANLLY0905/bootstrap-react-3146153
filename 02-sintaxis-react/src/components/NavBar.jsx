@@ -11,6 +11,6 @@ export const NavBar = () => {
         </div>  
         <button className="btn-mode">🌞</button>
     </div>
-    </div>  
+    </div>   
   )
 }

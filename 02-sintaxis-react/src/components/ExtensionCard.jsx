@@ -8,7 +8,7 @@ export const ExtensionCard = ({cardTitle, cardImage, cardDescription}) => {
         <div className='icon'>
         <img className='icono' src="" alt="" />
 
-        </div>
+        </div> 
         <div className='texto'>
           <h1 className='titulo'>DevLes</h1>
           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iusto dolorum quo explicabo </p>
