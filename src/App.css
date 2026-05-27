@@ -22,7 +22,7 @@
 }
 
 
-
+ 
 
 .character-card {
 background: #330505;
@@ -99,19 +99,13 @@ background: rgba(0, 0, 0, 0.35);
 
 
 
-
-
-
-
-
-
 .footer-visumbrio {
   background-color: #ffffff;
   text-align: center;
   padding: 40px 0 30px;
 }
 
-/* ICONOS */
+
 .footer-icons {
   display: flex;
   justify-content: center;
@@ -125,7 +119,7 @@ background: rgba(0, 0, 0, 0.35);
   cursor: pointer;
 }
 
-/* LINKS */
+
 .footer-links {
   display: flex;
   justify-content: center;
@@ -144,14 +138,12 @@ background: rgba(0, 0, 0, 0.35);
   cursor: default;
 }
 
-/* COPYRIGHT */
+
 .footer-copy {
   color: #8b1e1e;
   font-size: 0.85rem;
   margin: 0;
 }
-
-
 
 
 

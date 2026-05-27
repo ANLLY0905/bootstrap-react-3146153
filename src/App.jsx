@@ -6,7 +6,7 @@ import { Footer } from './assets/Footer';
 
 
 
-export const App = () => {
+export const App = ({TextoBoton}) => {
     return (
         <div className="container-fluid p-0">
 
@@ -17,7 +17,7 @@ export const App = () => {
                         src="./src/assets/Logo.svg"
                         alt="Visumbrío Logo"
                         className="logo-img"
-                    />
+                    /> 
                 </div>
 
                 <nav className="nav flex-column flex-md-row justify-content-center align-items-center mt-3 menu-principal">
@@ -83,7 +83,7 @@ export const App = () => {
                 </p>
 
                 <div className="d-flex justify-content-center mt-4">
-                    <button className="btn btn-dark px-4">
+                    <button className="btn btn-dark px-4 ">
                         Ir al cómic
                     </button>
                 </div>
@@ -141,7 +141,7 @@ export const App = () => {
             <section className="container text-center my-5">
 
                 <h2 className="fw-bold mb-2">INTEGRANTES</h2>
-
+                             
                 <p className="text-muted px-5 mt-5">
                     Te presentamos a quienes dan vida a este proyecto, compartiendo su visión
                     y pasión por comprender las transformaciones sociales en momentos difíciles.
@@ -149,7 +149,7 @@ export const App = () => {
 
                 <div className="row justify-content-center g-5">
 
-                    <div className="col-md-4">
+                    <div className="col-md-4 p-4">
                         <Integrantes
                             nombre="Anlly Rojo"
                             imagen="./src/assets/Foto.Anlly.png"
@@ -157,7 +157,7 @@ export const App = () => {
                         />
                     </div>
 
-                    <div className="col-md-4">
+                    <div className="col-md-4 p-4">
                         <Integrantes
                             nombre="Nicoll Zapata"
                             imagen="./src/assets/Foto.Nicoll.png"
