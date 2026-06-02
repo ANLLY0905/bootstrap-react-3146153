@@ -1,20 +1,62 @@
 import './App.css';
+import { Home } from "./componentes/Home";
 import { TarjetaPer } from "./assets/TarjetaPer";
 import { VideoSec } from "./assets/VideoSec";
-import { Integrantes } from './assets/Integrantes';
+import { Integrantes } from './componentes/Integrantes';
+import { Tienda } from './componentes/Tienda';
 import { Footer } from './assets/Footer';
 
 
 
 export const App = ({TextoBoton}) => {
     return (
+
         <div className="container-fluid p-0">
+            <div className="header">
+
+                <div className="text-center pt-2 px-3">
+                    <img
+                        src="./src/assets/Logo.png"
+                        alt="Visumbrío Logo"
+                        className="logo-img"
+                    /> 
+                </div>
+
+                <nav className="nav flex-column flex-md-row justify-content-center align-items-center mt-3 menu-principal">
+                    <a className="nav-link" href="#">Inicio</a>
+                    <a className="nav-link" href="#">Cómic</a>
+                    <a className="nav-link" href="#">Integrantes</a>
+                    <a className="nav-link" href="#">Tienda</a>
+                </nav>
+
+            </div>
+
+             <Home
+             imagen1="./src/assets/ojo.png"
+             texto1='Investigar y reflexionar sobre las acciones y dilemas éticos que enfrentan las personascuando la población mundial alcanza niveles insostenibles, destacando las implicaciones anivel social, económico y medioambiental.'
+             imagen2="./src/assets/explorar.png"
+             texto2='Explorar la resiliencia humana y la capacidad de adaptación en tiempos de adversidad a través de testimonio de vida en casos reales.'
+             imagen3="./src/assets/ajustes.png"
+             texto3="Consolidar una recolección de referentes visuales que muestran la transformación de laidentidad en tiempos de crisis, con el fin de analizar la destrucción del entorno a causa de las crisis sociales."
+             titulo="NUESTROS OBJETIVOS"
+             
+             
+             />  
+
+               <section className="barra-difuminada text-center mt-5">
+                <p className="text-white mb-0">
+                    Si eres una persona con alto interés en temas sociales, culturales y en dinámicas de poder, esta página es para ti
+                </p>
+            </section>
+
+             <Footer/>
+
 
             <div className="header">
 
                 <div className="text-center pt-2 px-3">
                     <img
-                        src="./src/assets/Logo.svg"
+                        src="./src/assets/Logo.png"
                         alt="Visumbrío Logo"
                         className="logo-img"
                     /> 
@@ -109,7 +151,7 @@ export const App = ({TextoBoton}) => {
 
                 <div className="text-center pt-2 px-3">
                     <img
-                        src="./src/assets/Logo.svg"
+                        src="./src/assets/Logo.png"
                         alt="Visumbrío Logo"
                         className="logo-img"
                     />
@@ -182,7 +224,28 @@ export const App = ({TextoBoton}) => {
 
             <Footer />
 
+            <div className="header">
 
+                <div className="text-center pt-2 px-3">
+                    <img
+                        src="./src/assets/Logo.png"
+                        alt="Visumbrío Logo"
+                        className="logo-img"
+                    /> 
+                </div>
+
+                <nav className="nav flex-column flex-md-row justify-content-center align-items-center mt-3 menu-principal">
+                    <a className="nav-link" href="#">Inicio</a>
+                    <a className="nav-link" href="#">Cómic</a>
+                    <a className="nav-link" href="#">Integrantes</a>
+                    <a className="nav-link" href="#">Tienda</a>
+                </nav>
+
+            </div>
+
+            <Tienda />
+
+            <Footer />
 
         </div>
     )

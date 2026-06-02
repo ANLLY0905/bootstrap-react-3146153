@@ -1,0 +1,68 @@
+.hero {
+  box-shadow: 0px 0px 20px 20px #420F0D;
+  border-radius: 2px;
+}
+.text{
+    font-size: 19px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.card-obj {
+background: #280403;
+color: white;
+border-radius: 10px;
+height: 100%;
+}
+.tarjeta-img {
+width: 7rem;
+}
+.tarjeta-img3{
+    width: 4rem;
+}
+
+.box{
+    background: #000;
+}
+.leer {
+background: #6e1b1b;
+color: white;
+border-radius: 5px;
+border: none;
+padding: 6px 15px;
+
+}
+
+.desafios-text {
+  max-width: 900px;
+}
+
+.desafio-banner {
+ width: 100%;
+  background-color: #6d1f1c;
+  color: white;
+  padding: 18px 10px;
+  font-size: 15px;
+  box-shadow: 0px 10px 13px 8px #6d1f1c;
+}
+
+.tituli{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.product-img {
+max-height: 160px;
+object-fit: contain;
+transition: transform 0.5s ease;
+}
+
+
+.product-img:hover {
+transform: scale(1.09);
+}
+
+
+.nombre {
+font-size: 16px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}

@@ -1,4 +1,3 @@
-
 export const Integrantes = ({ nombre, imagen, descripcion }) => {
   return (
     <div className="text-center">
