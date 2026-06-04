@@ -1,8 +1,12 @@
 import "../stylesheets/Home.css"
+import { Header } from "../Componentes/Header";
 
-export const Tienda = () => {
+export const TiendaPage = () => {
   return (
-    <div className="container flex-grow-1">
+
+    <><>
+      <Header />
+      <div className="container flex-grow-1">
 
         <h3 className='text-center mb-5 tituli'>TIENDA</h3>
         <h5 className="text-center mb-5">NUESTROS PRODUCTOS</h5>
@@ -33,6 +37,13 @@ export const Tienda = () => {
             <p className="nombre">Botella Negra</p>
           </div>
         </div>
-      </div>
+      </div></><section className="barra-difuminada text-center">
+        <p className="text-white mb-0">
+          Si eres una persona con alto interés en temas sociales, culturales y en dinámicas de poder, esta página es para ti
+        </p>
+      </section>
+      
+      <Footer />
+      </>
   )
 }

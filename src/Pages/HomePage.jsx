@@ -1,11 +1,15 @@
 import "../stylesheets/Home.css";
 import { Footer } from "../assets/Footer";
+import { Header } from "../Componentes/Header";
 
-export const Home = () => {
+
+export const HomePage = () => {
 
 return (
 
 <>
+
+<Header/>
 
 <div className="container-fluid p-0">
 
@@ -44,7 +48,7 @@ className="tarjeta-img"
 />
 
 <p>
-Investigar y reflexionar sobre las acciones y dilemas éticos que enfrentan las personas cuando la población mundial alcanza niveles insostenibles.
+Investigar y reflexionar sobre las acciones y dilemas éticos que enfrentan las personascuando la población mundial alcanza niveles insostenibles, destacando las implicaciones anivel social, económico y medioambiental.
 </p>
 
 </div>
@@ -60,7 +64,7 @@ className="tarjeta-img"
 />
 
 <p>
-Explorar la resiliencia humana y la capacidad de adaptación en tiempos de adversidad.
+Explorar la resiliencia humana y la capacidad de adaptación en tiempos de adversidad a través de testimonio de vida en casos reales.
 </p>
 
 </div>
@@ -77,7 +81,7 @@ className="tarjeta-img"
 />
 
 <p>
-Analizar la transformación de la identidad en tiempos de crisis sociales.
+Consolidar una recolección de referentes visuales que muestran la transformación de laidentidad en tiempos de crisis, con el fin de analizar la destrucción del entorno a causa de las crisis sociales.
 </p>
 
 </div>
@@ -105,8 +109,7 @@ Contextualización
 
 <p className="text-white">
 
-En tiempos de crisis, la cultura, la identidad y la sociedad cambian, reflejando la adaptación de las comunidades.
-
+En tiempos de crisis, la cultura, la identidad y la sociedad cambian, reflejando la adaptación de las comunidades. La cultura actúa como resistencia y expresión, mientras que la identidad se redefine según las dinámicas sociales y mediáticas.
 </p>
 
 
@@ -133,10 +136,9 @@ Justificación
 
 <p className="text-white">
 
-Este proyecto surge ante la necesidad de analizar las decisiones humanas en situaciones extremas y cómo estas pueden verse influenciadas por la cultura, identidad y sociedad.
+Este proyecto surge ante la necesidad de analizar las decisiones humanas en situaciones extremas y cómo estas pueden verse influenciadas por la cultura, la identidad y la sociedad en tiempos de crisis.
 
 </p>
-
 
 <img src="./src/assets/image2.png" className="img-fluid"/>
 
@@ -156,20 +158,23 @@ Desafíos que Analizamos
 </h4>
 
 
-<p>
+<p className="mx-auto desafios-text">
+       Muchas veces se pasa por alto cómo las decisiones y los intereses de los mandatarios pueden generar consecuencias negativas para la sociedad. Esta falta de conversación limita el pensamiento crítico y dificulta que las personas comprendan realmente lo que ocurre en momentos de crisis.
+      </p>
 
-Muchas veces se pasa por alto cómo las decisiones y los intereses de los mandatarios pueden generar consecuencias negativas para la sociedad.
-
-</p>
 
 </section>
 
 
 </div>
 
+<section className="barra-difuminada text-center">
+    <p className="text-white mb-0">
+        Si eres una persona con alto interés en temas sociales, culturales y en dinámicas de poder, esta página es para ti
+    </p>
+</section>
 
-<Footer/>
-
+<Footer />
 </>
 
 )
