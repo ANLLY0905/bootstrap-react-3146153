@@ -42,9 +42,8 @@ NUESTROS OBJETIVOS
 <div className="col-md-4">
 <div className="card-obj px-3 py-4">
 
-<img 
+<img className="tarjeta-img py-3"
 src="./src/assets/ojo.png"
-className="tarjeta-img"
 />
 
 <p>
@@ -58,9 +57,8 @@ Investigar y reflexionar sobre las acciones y dilemas éticos que enfrentan las 
 <div className="col-md-4">
 <div className="card-obj px-3 py-4">
 
-<img 
+<img className="tarjeta-img py-3"
 src="./src/assets/explorar.png"
-className="tarjeta-img"
 />
 
 <p>
@@ -75,9 +73,8 @@ Explorar la resiliencia humana y la capacidad de adaptación en tiempos de adver
 
 <div className="card-obj px-3 py-4">
 
-<img 
+<img  className="tarjeta-img3 py-3"
 src="./src/assets/ajustes.png"
-className="tarjeta-img"
 />
 
 <p>

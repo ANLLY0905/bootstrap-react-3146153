@@ -6,7 +6,7 @@
 
 
 .menu-principal{
-  background-color: #6D0E0A;
+  background-color: #a6bec9;
   border-radius: 1.5vh;
   padding: 4px 0;
   margin: 0 auto;
@@ -72,7 +72,7 @@ background: rgba(0, 0, 0, 0.35);
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #6D0E0A;
+  border: 3px solid #a6bec9;
 }
 
 .integrante-img {
@@ -89,8 +89,8 @@ background: rgba(0, 0, 0, 0.35);
   background: linear-gradient(
     to bottom,
     transparent,
-    #6D0E0A 20%,
-    #6D0E0A 62%,
+    #a6bec9 20%,
+    #a6bec9 62%,
     transparent
   );
   padding: 60px 10px;
@@ -115,7 +115,7 @@ background: rgba(0, 0, 0, 0.35);
 
 .footer-icons i {
   font-size: 1.8rem;
-  color: #8b1e1e;
+  color: #a6bec9;
   cursor: pointer;
 }
 
@@ -125,7 +125,7 @@ background: rgba(0, 0, 0, 0.35);
   justify-content: center;
   align-items: center;
   gap: 18px;
-  color: #8b1e1e;
+  color: #a6bec9;
   font-size: 0.95rem;
   margin-bottom: 18px;
 }
@@ -140,7 +140,7 @@ background: rgba(0, 0, 0, 0.35);
 
 
 .footer-copy {
-  color: #8b1e1e;
+  color: #a6bec9;
   font-size: 0.85rem;
   margin: 0;
 }

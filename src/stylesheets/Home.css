@@ -1,5 +1,5 @@
 .hero {
-  box-shadow: 0px 0px 20px 20px #420F0D;
+  box-shadow: 0px 0px 20px 20px #daeaef;
   border-radius: 2px;
 }
 .text{
@@ -8,8 +8,8 @@
 }
 
 .card-obj {
-background: #280403;
-color: white;
+background: #daeaef;
+color: #939393;
 border-radius: 10px;
 height: 100%;
 }
@@ -18,13 +18,14 @@ width: 7rem;
 }
 .tarjeta-img3{
     width: 4rem;
+    color: #939393;
 }
 
 .box{
     background: #000;
 }
 .leer {
-background: #6e1b1b;
+background: #a6bec9;
 color: white;
 border-radius: 5px;
 border: none;
@@ -38,11 +39,11 @@ padding: 6px 15px;
 
 .desafio-banner {
  width: 100%;
-  background-color: #6d1f1c;
+  background-color: #a6bec9;
   color: white;
   padding: 18px 10px;
   font-size: 15px;
-  box-shadow: 0px 10px 13px 8px #6d1f1c;
+  box-shadow: 0px 10px 13px 8px #a6bec9;
 }
 
 .tituli{
