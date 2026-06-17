@@ -2,10 +2,6 @@
   box-shadow: 0px 0px 20px 20px #daeaef;
   border-radius: 2px;
 }
-.text{
-    font-size: 19px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
 
 .card-obj {
 background: #daeaef;
@@ -14,15 +10,16 @@ border-radius: 10px;
 height: 100%;
 }
 .tarjeta-img {
-width: 7rem;
+width: 5rem;
 }
 .tarjeta-img3{
-    width: 4rem;
-    color: #939393;
+    width: 5rem;
+
 }
 
 .box{
-    background: #000;
+    background: #939393;
+
 }
 .leer {
 background: #a6bec9;
@@ -46,10 +43,6 @@ padding: 6px 15px;
   box-shadow: 0px 10px 13px 8px #a6bec9;
 }
 
-.tituli{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-}
 .product-img {
 max-height: 160px;
 object-fit: contain;
