@@ -1,22 +1,22 @@
 
-export const Comic = ({ nme, description, image, imagen}) => {
+export const Comic = ({ nme, description, image, video}) => {
     
     return (
         <>
 
         
-        {imagen ? (
+        {video ? (
 
             <div className="video-wrapper mx-auto position-relative">
 
-                <img
-                    src={imagen}
+                <video
+                    src={video}
                     className="img-fluid video-img"
+                    controls
+                    autoPlay
+                    muted
+                    loop
                 />
-
-                <div className="play-overlay d-flex justify-content-center align-items-center">
-                    <i className="bi bi-play-fill video-play-icon"></i>
-                </div>
 
             </div>
 

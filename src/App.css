@@ -41,7 +41,7 @@ object-fit: contain;
 .video-wrapper {
 width: 100%;
 max-width: 900px;
-height: 280px;
+height: 500px;
 overflow: hidden;
 border-radius: 12px;
 }

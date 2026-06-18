@@ -22,8 +22,8 @@ Buscamos concienciar, entretener y enseñar sobre cómo la cultura, la identidad
 
 
 <img 
-src="./src/assets/primera.png"
-className="img-fluid hero"
+src="./src/assets/img1.png"
+className="img-fluid hero img1"
 />
 
 </section>

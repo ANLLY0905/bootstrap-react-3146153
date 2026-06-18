@@ -54,7 +54,9 @@ return (
                     Conoce nuestro cómic
                 </h2>
 
-                <Comic imagen="./src/assets/VerComic.svg" />
+                <Comic 
+                
+                video="./src/assets/Teaser.mp4" />
 
                 <p className="text-center mt-4">
                     En plena crisis, la población aprende a ocultarse, adaptarse y luchar
