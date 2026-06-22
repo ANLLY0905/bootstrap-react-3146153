@@ -21,9 +21,8 @@ Buscamos concienciar, entretener y enseñar sobre cómo la cultura, la identidad
 </p>
 
 
-<img 
+<img className="img-fluid hero img1 mt-5"
 src="./src/assets/img1.png"
-className="img-fluid hero img1"
 />
 
 </section>
@@ -37,7 +36,7 @@ NUESTROS OBJETIVOS
 </h3>
 
 
-<div className="row g-4">
+<div className="row g-4 mt-4">
 
 <div className="col-md-4">
 <div className="card-obj px-3 py-4">
