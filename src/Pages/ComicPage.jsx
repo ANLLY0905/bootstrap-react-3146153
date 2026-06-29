@@ -1,10 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { Comic } from "../Componentes/Comic";
 import { Footer } from "../assets/Footer";
 import { Header } from "../Componentes/Header";
 
 
 export const ComicPage =()=>{
-
+    const navigate = useNavigate();
 
 return (
 
@@ -64,7 +65,7 @@ return (
                 </p>
 
                 <div className="d-flex justify-content-center mt-4">
-                    <button className="btn btn-dark px-4 ">
+                    <button className="btn btn-dark px-4" onClick={() => navigate("/comic/portada")}>
                         Ir al cómic
                     </button>
                 </div>

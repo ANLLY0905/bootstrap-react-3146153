@@ -66,3 +66,45 @@ font-size: 16px;
 font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
+
+.banner-tienda{
+  
+    color:#939393;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.product-card{
+    border:none;
+    border-radius:15px;
+    transition:.4s;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+.product-card:hover{
+    transform:translateY(-8px);
+}
+
+.btn-visumbrio{
+    background:#a6bec9;
+    border:none;
+}
+
+.btn-visumbrio:hover{
+    background:#759aac;
+}
+
+.btn-visumbrio-secundario{
+    background:#daeaef;
+    border:none;
+    color:#939393;
+}
+
+.btn-visumbrio-secundario:hover{
+    background:#bddee7;
+}
+
+.badge-visumbrio{
+    background:#a6bec9 !important;
+    color:white !important;
+}
