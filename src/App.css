@@ -39,9 +39,8 @@ object-fit: contain;
 
 
 .video-wrapper {
-width: 100%;
-max-width: 900px;
-height: 500px;
+width: 70%;
+height: 100%;
 overflow: hidden;
 border-radius: 12px;
 }
@@ -60,8 +59,13 @@ inset: 0;
 background: rgba(0, 0, 0, 0.35);
 }
 
+.jola{
+ transition:.3s;
+}
 
-
+.jola:hover {
+  transform:translateY(-8px);
+}
 
 
 .integrante-circle {

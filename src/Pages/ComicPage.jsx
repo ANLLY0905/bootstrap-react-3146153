@@ -27,7 +27,7 @@ return (
 
 
                 <div className="row justify-content-center mt-4 g-4">
-                    <div className="col-10 col-sm-6 col-md-4 col-lg-3">
+                    <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="DREKXON"
                             image="./src/assets/Drekxon.1.svg"
@@ -35,7 +35,7 @@ return (
                     </div>
 
 
-                    <div className="col-10 col-sm-6 col-md-4 col-lg-3">
+                    <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="EMILIA"
                             image="./src/assets/Emilia.svg"
@@ -43,7 +43,7 @@ return (
                     </div>
 
 
-                    <div className="col-10 col-sm-6 col-md-4 col-lg-3">
+                    <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="KIAN"
                             image="./src/assets/Kian Frente.svg"

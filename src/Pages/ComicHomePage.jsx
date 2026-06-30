@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 import { Header } from "../Componentes/Header";
 import { Footer } from "../assets/Footer";
-import portada1 from "../assets/img1.png";
-import portada2 from "../assets/img1.png";
+import portada1 from "../assets/Capítulo-1.png";
+import portada2 from "../assets/Capítulo-2.png";
 
 
 const chapters = [
@@ -18,9 +18,9 @@ const chapters = [
   {
     id: 2,
     title: "Capítulo 2",
-    subtitle: "La Cacería",
+    subtitle: "Caos",
     description: "La humanidad colapsa. Kian y Emilia se encuentran en medio del caos mientras los Drekxon rastrean cada sonido.",
-    pages: 6,
+    pages: 5,
     path: "/comic/capitulo-2",
     portada: portada2,
   },
@@ -62,11 +62,11 @@ export const ComicHomePage = () => {
   <img
     src={ch.portada}
     alt={`Portada ${ch.title}`}
-    style={{ width: "100%", height: "260px", objectFit: "cover" }}
+    style={{ width: "100%", height: "400px", objectFit: "cover" }}
   />
 ) : (
   <div style={{
-    height: "260px",
+    height: "280px",
     background: "linear-gradient(135deg, #1a0000 0%, #0d0d0d 50%, #0a0a1a 100%)",
     display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center",
     position: "relative", overflow: "hidden",

@@ -23,8 +23,7 @@ import personaje3 from "../assets/Drekxon.png";
 import personaje4 from "../assets/Dr.Bernal.png";
 import personaje5 from "../assets/Ministra.png";
 
-
-// import separadorImg from "../assets/separador.png";
+import buzosImg from "../assets/buzos.png";
 
 const escenarios = [
   { id: 1, nombre: "BIBLIOTECA", img: escenario1 },
@@ -62,17 +61,17 @@ const productos = [
   nombre: "Lámpara Drekxon",
   precio: 120000,
   descripcion: "Lámpara de ambiente con varios modos de iluminación inspirada en la estética oscura del cómic. Perfecta para tu escritorio.",
-  imgs: [lampara1, lampara2, lampara3],   // ← array en lugar de img único
+  imgs: [lampara1, lampara2, lampara3],
   badge: "Edición limitada",
   },
 
   {
     id: 3,
-    nombre: "Separador de Libros",
-    precio: 25000,
-    descripcion: "Separador rígido con ilustración exclusiva de El Silencio de Orien. Impreso en material premium.",
-    img: null, // reemplaza con: separadorImg
-    badge: "Coleccionable",
+    nombre: "Buzos",
+    precio: 85000,
+    descripcion: "Buzos de algodón con estampado de Visumbrio. Cómodos y cálidos, perfectos para cualquier ocasión.",
+    img: buzosImg, 
+    badge: "",
   },
 ];
 
