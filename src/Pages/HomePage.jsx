@@ -109,7 +109,7 @@ En tiempos de crisis, la cultura, la identidad y la sociedad cambian, reflejando
 </p>
 
 
-<img src="./src/assets/image1.png" className="img-fluid"/>
+<img src="./src/assets/Contextualización.png" className="img-fluid contex"/>
 
 
 </div>
@@ -136,7 +136,7 @@ Este proyecto surge ante la necesidad de analizar las decisiones humanas en situ
 
 </p>
 
-<img src="./src/assets/image2.png" className="img-fluid"/>
+<img src="./src/assets/Justificación.png" className="img-fluid justi"/>
 
 
 </div>

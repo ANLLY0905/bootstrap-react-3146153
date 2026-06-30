@@ -35,7 +35,15 @@ border: none;
 padding: 6px 15px;
 
 }
+.contex{
+    width: 90%;
+    height: 380px;
+}
 
+.justi{
+    width: 90%;
+    height: 380px;
+}
 .desafios-text {
   max-width: 900px;
 }
@@ -107,4 +115,54 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 .badge-visumbrio{
     background:#a6bec9 !important;
     color:white !important;
+}
+
+.integrante-card {
+  border-radius: 12px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.integrante-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.integrante-foto {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.integrante-card:hover .integrante-foto {
+  transform: scale(1.06);
+  box-shadow: 0 0 0 6px rgba(13, 110, 253, 0.15);
+}
+
+.integrante-nombre {
+  position: relative;
+  display: inline-block;
+}
+
+.integrante-nombre::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.integrante-card:hover .integrante-nombre::after {
+  width: 100%;
+  left: 0;
+}
+
+.integrante-descripcion {
+  opacity: 0.85;
+  transition: opacity 0.3s ease;
+}
+
+.integrante-card:hover .integrante-descripcion {
+  opacity: 1;
 }

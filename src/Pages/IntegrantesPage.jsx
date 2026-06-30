@@ -12,14 +12,13 @@ return (
 <Header/>
 
 <section className="container text-center mt-5">
+
+    <h2 className="fw-bold mb-5">INTEGRANTES</h2>
   <p className="text-muted px-5">
     Somos un grupo apasionado por entender cómo la cultura, la identidad y la sociedad cambian y se adaptan en tiempos de crisis.
   </p>
-</section><section className="container text-center my-5">
 
-    <h2 className="fw-bold mb-2">INTEGRANTES</h2>
-
-    <p className="text-muted px-5 mt-5">
+    <p className="text-muted px-5">
       Te presentamos a quienes dan vida a este proyecto, compartiendo su visión
       y pasión por comprender las transformaciones sociales en momentos difíciles.
     </p>
