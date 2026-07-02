@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 1300px;
+    height: 820px;
+    background-image: url(./img/FondoR.svg);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cartucho{
+  width: 500px;
+  position: absolute;
+  top: 40px;
+  left: 405px;
+  display: none;
+}
+
+
+.cartucho.visible{
+  display: block;
+}
+ 
+
+#luzpc{
+    width: 247px;
+    position: absolute;
+    top: 518px;
+    left: 750px;
+    cursor: pointer;
+}
+
+.activo #luzpc{
+    animation: titilar 1s infinite;
+}
+
+@keyframes titilar {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+#barras{
+    width: 24px;
+    position: absolute;
+    top: 555px;
+    left: 881px;
+    cursor: pointer;
+
+}
+
+.activo #barras{
+    animation: moverBarra 3s infinite;
+}
+
+@keyframes moverBarra {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#circulos{
+    width: 13.5px;
+    position: absolute;
+    top: 559px;
+    left: 795px;
+    cursor: pointer;
+
+}
+
+.activo #circulos {
+    animation: Cir 2s infinite ease-in-out;
+}
+
+@keyframes Cir {
+  0% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+}
+
+#redondo{
+    width: 48px;
+    position: absolute;
+    top: 559px;
+    left: 824px;
+    fill: rgba(83, 8, 8, 0.525);
+    cursor: pointer;
+}
+
+#redondo:hover{
+  filter: drop-shadow(20px 20px 20px rgba(214, 89, 89, 0.801));
+}
+
+.activo #redondo {
+    animation: cambioColor 2s infinite;
+
+}
+
+@keyframes cambioColor {
+  0% {
+    fill: rgba(0, 0, 0, 0.523);
+  }
+  50% {
+    fill: rgba(103, 14, 14, 0.634);
+  }
+  100% {
+    fill: rgba(0, 0, 0, 0.427);
+  }
+}
+
+
+#DrBernal{
+  width: 315px;
+  position: absolute;
+  top: 349px;
+  left: 950px;
+  cursor: pointer;
+}
+
+#DrBernal:hover{
+  filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+}
+
+#activadordrekxon{
+  width: 27px;
+  height: 11px;
+  background-color: rgb(92, 150, 100);
+  position: absolute;
+  top: 339.5px;
+  left: 1114.5px;
+  cursor: pointer;
+}
+
+#activadordrekxon:hover{
+  filter: drop-shadow(20px 20px 20px rgb(202, 255, 87));
+}
+
+#Drekxon{
+  width: 270px;
+  position: absolute;
+  top: 200px;
+  left: 95px;
+}
+
+#Drekxon2{
+  width: 230px;
+  position: absolute;
+  top: 235px;
+  left: 475px;
+}
+
+
+#Drekxon3{
+  width: 200px;
+  position: absolute;
+  top: 256px;
+  left: 785px;
+}
+
+#sombrascap{
+  width: 950px;
+  position: absolute;
+  left: 40px;
+  top: 200px;
+}
+
+
+.btn1 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #8b0000;
+    background: rgba(0, 0, 0, 0.799);
+    color: #8b0000;
+    font-weight: 800;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute; 
+    top: 150px;
+    left: 1200px; 
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn1:hover {
+    background: rgba(0, 0, 0, 0.645);
+    transform: scale(1.1);
+}
+
+
+
+
+
+

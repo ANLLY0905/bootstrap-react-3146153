@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.98 34.5">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #753434;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+    </style>
+  </defs>
+  <g id="Pantalla">
+    <g>
+      <ellipse class="cls-1" cx="25.49" cy="17.25" rx="25.49" ry="17.25"/>
+      <ellipse id="redondo" class="cls-2" cx="25.49" cy="17.25" rx="25.49" ry="17.25"/>
+    </g>
+  </g>
+</svg>

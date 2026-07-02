@@ -44,16 +44,46 @@ export const ComicViewer = ({ chapterNumber, chapterTitle, scenes, nextChapterPa
           ))}
         </div>
 
-        <div style={{ width: "100%", maxWidth: "700px", opacity: animDir ? 0 : 1, transform: animDir === "right" ? "translateX(-30px)" : animDir === "left" ? "translateX(30px)" : "none", transition: "opacity 0.18s, transform 0.18s" }}>
-          {/* Illustration */}
-          <div style={{ width: "100%", aspectRatio: "16/9", background: scene.bg || "linear-gradient(135deg, #1a0000, #0d0d1a)", borderRadius: "4px 4px 0 0", border: "1px solid #222", display: "flex", alignItems: "center", justifyContent: "center", position: "relative", overflow: "hidden" }}>
-            <div style={{ position: "absolute", inset: 0, backgroundImage: "linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px)", backgroundSize: "40px 40px" }} />
-            <div style={{ position: "relative", textAlign: "center" }}>
-            </div>
-            <span style={{ position: "absolute", bottom: "1rem", right: "1.25rem", color: "rgba(224, 190, 190, 0.2) 0.2)", fontSize: "4rem", fontWeight: 900, lineHeight: 1 }}>
-              {String(current + 1).padStart(2, "0")}
-            </span>
-          </div>
+        <div style={{ width: "100%", maxWidth: "1600px", opacity: animDir ? 0 : 1, transform: animDir === "right" ? "translateX(-30px)" : animDir === "left" ? "translateX(30px)" : "none", transition: "opacity 0.18s, transform 0.18s" }}>
+          
+          <div
+ 
+  style={{
+    width: "100%",
+    minHeight: "810px",
+    borderRadius: "4px 4px 0 0",
+    border: "1px solid #222",
+    position: "relative",
+    overflow: "hidden"    // ← hidden en lugar de auto
+  }}
+>
+  {scene.component ? (
+    scene.component
+  ) : (
+    <>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          background: scene.bg || "#111"
+        }}
+      />
+
+      <span
+        style={{
+          position: "absolute",
+          bottom: "1rem",
+          right: "1.25rem",
+          color: "rgba(224,190,190,0.2)",
+          fontSize: "4rem",
+          fontWeight: 900
+        }}
+      >
+        {String(current + 1).padStart(2, "0")}
+      </span>
+    </>
+  )}
+</div>
 
           {/* Dialogue box */}
           <div style={{ background: "#c0c0c0", border: "1px solid #916868", borderTop: "none", borderRadius: "0 0 4px 4px", padding: "1.5rem" }}>
