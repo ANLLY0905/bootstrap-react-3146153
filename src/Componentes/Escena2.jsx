@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import lottie from "lottie-web";
 
-// Assets — copia todos en src/assets/capitulo1/escena2/
 import fonSvg from "../assets/escena2/Fon.svg";
 import d1Img from "../assets/escena2/d1.png";
 import d2Img from "../assets/escena2/d2.png";

@@ -54,7 +54,7 @@ export const ComicViewer = ({ chapterNumber, chapterTitle, scenes, nextChapterPa
     borderRadius: "4px 4px 0 0",
     border: "1px solid #222",
     position: "relative",
-    overflow: "hidden"    // ← hidden en lugar de auto
+    overflow: "hidden"   
   }}
 >
   {scene.component ? (
