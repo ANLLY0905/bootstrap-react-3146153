@@ -1,6 +1,8 @@
 import { Integrantes } from "../Componentes/Integrantes";
 import { Footer } from "../assets/Footer";
 import { Header } from "../Componentes/Header";
+import fotoAnlly from "../assets/Foto.Anlly.png";
+import fotoNicoll from "../assets/Foto.Nicoll.png";
 
 
 export const IntegrantesPage=()=>{
@@ -28,14 +30,14 @@ return (
       <div className="col-md-4 p-4">
         <Integrantes
           nombre="Anlly Rojo"
-          imagenn="./src/assets/Foto.Anlly.png"
+          imagenn={fotoAnlly}
           descripcion="Le apasiona crear historias que exploran la sociedad, la identidad y las decisiones humanas en realidades complejas, buscando generar reflexión y conexión emocional a través de la narrativa visual y digital." />
       </div>
 
       <div className="col-md-4 p-4">
         <Integrantes
           nombre="Nicoll Zapata"
-          imagenn="./src/assets/Foto.Nicoll.png"
+          imagenn={fotoNicoll}
           descripcion="Le motiva construir historias que conecten lo narrativo con lo social, explorando los cambios culturales y las tensiones humanas en tiempos difíciles. Su trabajo busca ofrecer una experiencia inmersiva que trascienda el cómic tradicional." />
       </div>
 

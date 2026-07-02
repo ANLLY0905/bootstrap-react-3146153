@@ -2,6 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { Comic } from "../Componentes/Comic";
 import { Footer } from "../assets/Footer";
 import { Header } from "../Componentes/Header";
+import drekxon from "../assets/Drekxon.1.svg";
+import emilia from "../assets/Emilia.svg";
+import kian from "../assets/Kian Frente.svg";
+import teaser from "../assets/Teaser.mp4";
 
 
 export const ComicPage =()=>{
@@ -30,7 +34,7 @@ return (
                     <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="DREKXON"
-                            image="./src/assets/Drekxon.1.svg"
+                            image={drekxon}
                             description="Criatura creada artificialmente. No siente, no ve... solo caza por sonido. Es la mayor amenaza de la humanidad, un arma disfrazada de invasión." />
                     </div>
 
@@ -38,7 +42,7 @@ return (
                     <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="EMILIA"
-                            image="./src/assets/Emilia.svg"
+                            image={emilia}
                             description="Estudiante de medicina brillante y decidida. Busca salvar vidas, pero descubre que parte de su investigación fue usada para crear a los Drekxon." />
                     </div>
 
@@ -46,7 +50,7 @@ return (
                     <div className="col-10 col-sm-6 col-md-4 col-lg-3 jola">
                         <Comic
                             nme="KIAN"
-                            image="./src/assets/Kian Frente.svg"
+                            image={kian}
                             description="Joven ingeniero marcado por la pérdida. Reservado y racional, pero valiente. Cuando el mundo colapsa, su mayor fuerza será proteger lo que ama." />
                     </div>
                 </div>
@@ -57,7 +61,7 @@ return (
 
                 <Comic 
                 
-                video="./src/assets/Teaser.mp4" />
+                video={teaser} />
 
                 <p className="text-center mt-4">
                     En plena crisis, la población aprende a ocultarse, adaptarse y luchar

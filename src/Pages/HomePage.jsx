@@ -1,6 +1,12 @@
 import "../stylesheets/Home.css";
 import { Footer } from "../assets/Footer";
 import { Header } from "../Componentes/Header";
+import img1 from "../assets/img1.png";
+import ojo from "../assets/ojo.png";
+import explorar from "../assets/explorar.png";
+import ajustes from "../assets/ajustes.png";
+import contextualizacion from "../assets/Contextualización.png";
+import justificacion from "../assets/Justificación.png";
 
 
 export const HomePage = () => {
@@ -22,7 +28,7 @@ Buscamos concienciar, entretener y enseñar sobre cómo la cultura, la identidad
 
 
 <img className="img-fluid hero img1 mt-5"
-src="./src/assets/img1.png"
+src={img1}
 />
 
 </section>
@@ -42,7 +48,7 @@ NUESTROS OBJETIVOS
 <div className="card-obj px-3 py-4">
 
 <img className="tarjeta-img py-3"
-src="./src/assets/ojo.png"
+src={ojo}
 />
 
 <p>
@@ -57,7 +63,7 @@ Investigar y reflexionar sobre las acciones y dilemas éticos que enfrentan las 
 <div className="card-obj px-3 py-4">
 
 <img className="tarjeta-img py-3"
-src="./src/assets/explorar.png"
+src={explorar}
 />
 
 <p>
@@ -73,7 +79,7 @@ Explorar la resiliencia humana y la capacidad de adaptación en tiempos de adver
 <div className="card-obj px-3 py-4">
 
 <img  className="tarjeta-img3 py-3"
-src="./src/assets/ajustes.png"
+src={ajustes}
 />
 
 <p>
@@ -111,7 +117,7 @@ Consolidar una recolección de referentes visuales que muestran la transformaci�
 
       <div className="col-md-6">
         <img
-          src="./src/assets/Contextualización.png"
+          src={contextualizacion}
           className="img-fluid contex"
         />
       </div>
@@ -137,7 +143,7 @@ Consolidar una recolección de referentes visuales que muestran la transformaci�
 
       <div className="col-md-6">
         <img
-          src="./src/assets/Justificación.png"
+          src={justificacion}
           className="img-fluid justi"
         />
       </div>
