@@ -1,147 +1,168 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.contenedor{
-    width: 1300px;
-    height: 820px;
-    background-image: url(./img/FondoR.svg);
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
+#btn1 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #8b0000;
+  background: rgba(0, 0, 0, 0.799);
+  color: #8b0000;
+  font-weight: 800;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn1:hover {
+  background: rgba(0, 0, 0, 0.645);
+  transform: scale(1.1);
 }
 
-.cartucho{
+#btn2 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #8b0000;
+  background: rgba(0, 0, 0, 0.799);
+  color: #8b0000;
+  font-weight: 800;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn2:hover {
+  background: rgba(0, 0, 0, 0.645);
+  transform: scale(1.1);
+}
+
+#btn3 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #8b0000;
+  background: rgba(0, 0, 0, 0.799);
+  color: #8b0000;
+  font-weight: 800;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btn3:hover {
+  background: rgba(0, 0, 0, 0.645);
+  transform: scale(1.1);
+}
+
+
+
+/* ── Botón base compartido ── */
+.btn1 {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #8b0000;
+  background: rgba(0, 0, 0, 0.799);
+  color: #8b0000;
+  font-weight: 800;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  transition: background 0.2s, transform 0.15s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn1:hover {
+  background: rgba(0, 0, 0, 0.645);
+  transform: scale(1.1);
+}
+
+/* ════════════════════════════
+   ESCENA 1
+════════════════════════════ */
+.contenedor {
+  width: 1300px;
+  height: 820px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor .cartucho {
   width: 500px;
   position: absolute;
   top: 40px;
   left: 405px;
   display: none;
 }
+.contenedor .cartucho.visible { display: block; }
 
+.contenedor #btn1 { top: 580px; left: 70px; }
 
-.cartucho.visible{
-  display: block;
+.contenedor #EsComputador { position: absolute; }
+
+.contenedor #luzpc {
+  width: 247px;
+  position: absolute;
+  top: 518px;
+  left: 750px;
+  cursor: pointer;
 }
- 
+.contenedor .activo #luzpc { animation: titilar 1s infinite; }
 
-#luzpc{
-    width: 247px;
-    position: absolute;
-    top: 518px;
-    left: 750px;
-    cursor: pointer;
+.contenedor #barras {
+  width: 24px;
+  position: absolute;
+  top: 555px;
+  left: 881px;
+  cursor: pointer;
 }
+.contenedor .activo #barras { animation: moverBarra 3s infinite; }
 
-.activo #luzpc{
-    animation: titilar 1s infinite;
+.contenedor #circulos {
+  width: 13.5px;
+  position: absolute;
+  top: 559px;
+  left: 795px;
+  cursor: pointer;
 }
+.contenedor .activo #circulos { animation: Cir 2s infinite ease-in-out; }
 
-@keyframes titilar {
-  0%   { opacity: 1; }
-  50%  { opacity: 0.4; }
-  100% { opacity: 1; }
+.contenedor #redondo {
+  width: 48px;
+  position: absolute;
+  top: 559px;
+  left: 824px;
+  fill: rgba(83, 8, 8, 0.525);
+  cursor: pointer;
 }
+.contenedor #redondo:hover { filter: drop-shadow(20px 20px 20px rgba(214, 89, 89, 0.801)); }
+.contenedor .activo #redondo { animation: cambioColor 2s infinite; }
 
-#barras{
-    width: 24px;
-    position: absolute;
-    top: 555px;
-    left: 881px;
-    cursor: pointer;
-
-}
-
-.activo #barras{
-    animation: moverBarra 3s infinite;
-}
-
-@keyframes moverBarra {
-  0% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-#circulos{
-    width: 13.5px;
-    position: absolute;
-    top: 559px;
-    left: 795px;
-    cursor: pointer;
-
-}
-
-.activo #circulos {
-    animation: Cir 2s infinite ease-in-out;
-}
-
-@keyframes Cir {
-  0% {
-    transform: scale(1);
-    opacity: 0.3;
-  }
-  50% {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 0.3;
-  }
-}
-
-#redondo{
-    width: 48px;
-    position: absolute;
-    top: 559px;
-    left: 824px;
-    fill: rgba(83, 8, 8, 0.525);
-    cursor: pointer;
-}
-
-#redondo:hover{
-  filter: drop-shadow(20px 20px 20px rgba(214, 89, 89, 0.801));
-}
-
-.activo #redondo {
-    animation: cambioColor 2s infinite;
-
-}
-
-@keyframes cambioColor {
-  0% {
-    fill: rgba(0, 0, 0, 0.523);
-  }
-  50% {
-    fill: rgba(103, 14, 14, 0.634);
-  }
-  100% {
-    fill: rgba(0, 0, 0, 0.427);
-  }
-}
-
-
-#DrBernal{
+.contenedor #DrBernal {
   width: 315px;
   position: absolute;
   top: 349px;
   left: 950px;
   cursor: pointer;
 }
+.contenedor #DrBernal:hover { filter: drop-shadow(1px 1px 1px rgb(255,255,255)); }
 
-#DrBernal:hover{
-  filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
-}
-
-#activadordrekxon{
+.contenedor #activadordrekxon {
   width: 27px;
   height: 11px;
   background-color: rgb(92, 150, 100);
@@ -150,64 +171,399 @@
   left: 1114.5px;
   cursor: pointer;
 }
+.contenedor #activadordrekxon:hover { filter: drop-shadow(20px 20px 20px rgb(202,255,87)); }
 
-#activadordrekxon:hover{
-  filter: drop-shadow(20px 20px 20px rgb(202, 255, 87));
+.contenedor #Drekxon  { width: 270px; position: absolute; top: 200px; left: 95px; }
+.contenedor #Drekxon2 { width: 230px; position: absolute; top: 235px; left: 475px; }
+.contenedor #Drekxon3 { width: 200px; position: absolute; top: 256px; left: 785px; }
+.contenedor #sombrascap { width: 950px; position: absolute; left: 40px; top: 200px; }
+
+/* ════════════════════════════
+   ESCENA 2
+════════════════════════════ */
+.contenedor2 {
+  width: 1290px;
+  background-image: url(../assets/escena2/Fon.svg);
+  height: 810px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+
 }
 
-#Drekxon{
-  width: 270px;
+.contenedor2 #btn1 { top: 100px; left: 1200px; }
+.contenedor2 #btn2 { top: 200px; left: 1200px; }
+.contenedor2 #btn3 { top: 300px; left: 1200px; }
+
+.contenedor2 #d1 { width: 150px; position: absolute; top: 450px; left: 750px; display: none; }
+.contenedor2 #d2 { width: 150px; position: absolute; top: 450px; left: 290px; display: none; }
+.contenedor2 #d3 { width: 150px; position: absolute; top: 450px; left: 750px; display: none; }
+.contenedor2 #d1.visible,
+.contenedor2 #d2.visible,
+.contenedor2 #d3.visible { display: block; }
+
+.contenedor2 #ministra { width: 500px; position: absolute; top: 400px; left: 10px; cursor: pointer; }
+.contenedor2 #ministra:hover { filter: drop-shadow(1px 1px 1px rgb(255,255,255)); }
+
+.contenedor2 #botonMD { width: 30px; position: absolute; top: 570px; left: 542px; cursor: pointer; }
+.contenedor2 #botonMD:hover { filter: drop-shadow(10px 10px 10px rgb(227,8,8)); }
+
+.contenedor2 #pantalla { width: 680px; position: absolute; top: 172px; left: 172px; }
+
+.contenedor2 #luzpantalla {
   position: absolute;
-  top: 200px;
-  left: 95px;
+  width: 720px;
+  top: 160px;
+  left: 190px;
+  animation: titilar 5s infinite;
 }
 
-#Drekxon2{
-  width: 230px;
+.contenedor2 #docBernal { width: 500px; position: absolute; top: 420px; left: 555px; }
+
+.contenedor2 #botonsonido { position: absolute; width: 30px; top: 720px; left: 1220px; cursor: pointer; }
+
+/* ════════════════════════════
+   ESCENA 3
+════════════════════════════ */
+.contenedor3 {
+  width: 1312.5px;
+  height: 810px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.contenedor3 #btn1 { top: 300px; left: 50px; }
+
+.contenedor3 #cartucho1 { width: 700px; position: absolute; top: 30px; left: 290px; display: none; }
+.contenedor3 #cartucho1.visible { display: block; }
+
+.contenedor3 #alerta1 {
+  width: 280px;
   position: absolute;
-  top: 235px;
-  left: 475px;
+  top: 113px;
+  left: 745px;
+  animation: titilar1 1.8s infinite ease-in-out;
+}
+.contenedor3 #alerta2 { width: 100px; position: absolute; top: 490px; left: 760px; }
+
+.contenedor3 #drekxon { width: 250px; position: absolute; top: 207px; left: 220px; cursor: pointer; }
+.contenedor3 #drekxon:hover { filter: drop-shadow(5px 5px 5px rgb(120,113,113)); }
+
+.contenedor3 #dialogo { width: 150px; position: absolute; top: 450px; left: 1100px; display: none; }
+.contenedor3 #dialogo.visible { display: block; }
+
+.contenedor3 #ministra { width: 170px; position: absolute; top: 425px; left: 950px; cursor: pointer; }
+.contenedor3 #ministra:hover { filter: drop-shadow(3px 3px 3px rgb(255,255,255)); }
+
+/* ════════════════════════════
+   ESCENA 4
+════════════════════════════ */
+.contenedor4 {
+  width: 1300px;
+  height: 730px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
+.contenedor4 #btn1 { top: 205px; left: 260px; }
 
-#Drekxon3{
-  width: 200px;
+.contenedor4 #cartucho4 { width: 600px; position: absolute; top: 125px; left: 390px; display: none; }
+.contenedor4 #cartucho4.visible { display: block; }
+
+.contenedor4 #nube1 { width: 250px; position: absolute; animation: moverNube 40s linear infinite; }
+.contenedor4 #nube2 { width: 250px; position: absolute; top: 100px; animation: flotarNube 6s ease-in-out infinite; }
+.contenedor4 #nube3 { width: 250px; position: absolute; top: 50px; left: 300px; animation: flotarNube 6s ease-in-out infinite; }
+.contenedor4 #nube4 { width: 250px; position: absolute; top: 30px; left: 800px; animation: flotarNube 9s ease-in-out infinite; }
+.contenedor4 #nube5 { width: 250px; position: absolute; top: 100px; left: 1000px; animation: flotarNube 6s ease-in-out infinite; }
+
+.contenedor4 #tallo1 { width: 150px; position: absolute; top: 350px; left: 1090px; z-index: 2; }
+.contenedor4 #arbol1 { width: 200px; position: absolute; top: 270px; left: 1060px; transform-origin: center bottom; animation: vientoArbol 7s ease-in-out infinite; z-index: 1; }
+.contenedor4 #tallo2 { width: 100px; position: absolute; top: 360px; left: 200px; z-index: 2; }
+.contenedor4 #arbol2 { width: 120px; position: absolute; top: 320px; left: 190px; transform-origin: center bottom; animation: vientoArbol2 5.5s ease-in-out infinite; z-index: 1; }
+
+.contenedor4 #emilia4 { width: 220px; position: absolute; top: 370px; left: 620px; cursor: pointer; }
+.contenedor4 #emilia4:hover { filter: drop-shadow(3px 3px 3px rgb(255,255,255)); }
+.contenedor4 #kian4 { width: 220px; position: absolute; top: 370px; left: 520px; cursor: pointer; }
+.contenedor4 #kian4:hover { filter: drop-shadow(3px 3px 3px rgb(255,255,255)); }
+
+/* ════════════════════════════
+   ESCENA 5
+════════════════════════════ */
+.container5 {
+  width: 1400px;
+  height: 900px;
+  margin: auto;
+  position: relative;
+}
+
+.container5 #btnMostrar { position: absolute; top: 100px; left: 1200px; }
+.container5 #btn-puerta { position: absolute; top: 490px; left: 300px; }
+.container5 #btn2-puerta { position: absolute; top: 440px; left: 300px; }
+
+.container5 #puerta1 { position: absolute; top: 172px; }
+
+.container5 #cartucho5 { display: none; position: absolute; left: 430px; }
+.container5 #cartucho5 img { width: 590px; }
+
+.container5 #emilia2 { position: absolute; top: 450px; left: 420px; cursor: pointer; }
+.container5 #emilia2:hover { filter: drop-shadow(10px 10px 10px rgb(255,255,255)); }
+
+/* ════════════════════════════
+   ESCENA 6
+════════════════════════════ */
+.container6 {
+  width: 1480px;
+  height: 980px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container6 #btnMostrar { position: absolute; top: 100px; left: 1200px; }
+.container6 #btn-frente { position: absolute; top: 200px; left: 1200px; }
+
+.container6 #puerta { position: absolute; top: 175px; }
+
+.container6 #barra { width: 120%; position: absolute; top: 240px; left: -120px; }
+.container6 #barra:hover { filter: drop-shadow(4px 4px 4px rgb(255,255,255)); }
+
+.container6 #frente { width: 20%; position: absolute; top: 360px; left: 440px; cursor: pointer; }
+
+.container6 #boton-barra {
+  width: 1000vh;
+  height: 40px;
   position: absolute;
-  top: 256px;
-  left: 785px;
+  background-color: rgba(0,255,255,0);
+  top: 660px;
+  cursor: pointer;
 }
 
-#sombrascap{
-  width: 950px;
+.container6 #cartucho6 { display: none; position: absolute; top: 190px; left: 560px; }
+.container6 #cartucho6 img { width: 280px; }
+
+/* ════════════════════════════
+   ESCENA 7
+════════════════════════════ */
+.container7 {
+  width: 1300px;
+  height: 750px;
+  margin: auto;
+  position: relative;
+}
+
+.container7 #btnAlarma { position: absolute; top: 20px; left: 20px; }
+
+.container7 #humo { position: absolute; top: -200px; left: 50px; z-index: 1; }
+.container7 #pantallas { position: absolute; top: 230px; left: 170px; z-index: 1; }
+.container7 #arbolFrente { position: absolute; top: 245px; left: 130px; z-index: 2; }
+
+/* ════════════════════════════
+   ESCENA 8
+════════════════════════════ */
+.container8 {
+  width: 1300px;
+  height: 750px;
+  margin: auto;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.container8 #pi1,
+.container8 #pi2 { position: absolute; }
+
+.container8 .personaje {
   position: absolute;
-  left: 40px;
-  top: 200px;
+  z-index: 2;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.container8 .personaje.visible {
+  opacity: 1;
+  transform: translateY(0px);
+  animation: respirar 3s ease-in-out infinite;
+}
+.container8 .personaje.corriendo {
+  transition: transform 1s ease-in;
+  transform: translateX(400px);
 }
 
+.container8 #emilia { top: 270px; left: 230px; width: 30%; }
+.container8 #kian   { top: 250px; left: 340px; width: 30%; }
 
-.btn1 {
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    border: 2px solid #8b0000;
-    background: rgba(0, 0, 0, 0.799);
-    color: #8b0000;
-    font-weight: 800;
-    font-size: 2rem;
-    cursor: pointer;
-    position: absolute; 
-    top: 150px;
-    left: 1200px; 
-    transition: background 0.2s, transform 0.15s;
+.container8 .burbuja {
+  position: absolute;
+  z-index: 4;
+  opacity: 0;
+  display: none;
+  transition: opacity 0.5s ease-in;
+}
+.container8 .burbuja.visible { opacity: 1; display: block; }
+
+.container8 #burbuja1 { top: 190px; left: 280px; }
+.container8 #burbuja2 { top: 180px; left: 480px; }
+.container8 #burbuja3 { top: 170px; left: 230px; }
+
+.container8 #luzGeneral {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(255,250,220,0.35);
+  z-index: 2;
+  pointer-events: none;
+  animation: parpadeoGeneral 4s infinite;
+  opacity: 0;
 }
 
-.btn1:hover {
-    background: rgba(0, 0, 0, 0.645);
-    transform: scale(1.1);
+.container8.temblando { animation: temblor 0.4s infinite; }
+
+/* ════════════════════════════
+   ESCENA 9
+════════════════════════════ */
+.contenedor9 {
+  width: 1300px;
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
 }
 
+.contenedor9 #btn1 { top: 580px; left: 70px; }
+.contenedor9 #btn2 { top: 500px; left: 1100px; }
 
+.contenedor9 #luz {
+  width: 1200px;
+  position: absolute;
+  top: -40px;
+  left: 150px;
+  transform-origin: center;
+  animation: titilarLuz 3s ease-in-out infinite;
+}
 
+.contenedor9 #cartucho1 { width: 500px; position: absolute; top: 150px; left: 750px; display: none; }
+.contenedor9 #cartucho1.visible { display: block; }
+.contenedor9 #cartucho2 { width: 500px; position: absolute; top: 250px; left: 750px; display: none; }
+.contenedor9 #cartucho2.visible { display: block; }
 
+.contenedor9 #emilia9 { width: 120px; position: absolute; top: 320px; left: 235px; cursor: pointer; }
+.contenedor9 #emilia9:hover { filter: drop-shadow(3px 3px 3px rgb(255,255,255)); }
+.contenedor9 #ojos { width: 60px; position: absolute; top: 368px; left: 261px; }
 
+.contenedor9 #dialogo1 { width: 100px; position: absolute; top: 220px; left: 300px; display: none; }
+.contenedor9 #dialogo1.visible { display: block; }
 
+.contenedor9 #kian9 { width: 120px; position: absolute; top: 305px; left: 345px; cursor: pointer; }
+.contenedor9 #kian9:hover { filter: drop-shadow(3px 3px 3px rgb(255,255,255)); }
+.contenedor9 #ojos2 { width: 95px; position: absolute; top: 347px; left: 362px; }
+
+.contenedor9 #dialogo2 { width: 100px; position: absolute; top: 250px; left: 450px; display: none; }
+.contenedor9 #dialogo2.visible { display: block; }
+
+/* ════════════════════════════
+   KEYFRAMES COMPARTIDOS
+════════════════════════════ */
+@keyframes titilar {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+@keyframes titilar1 {
+  0%   { opacity: 1; }
+  50%  { opacity: 0.35; }
+  100% { opacity: 1; }
+}
+
+@keyframes titilarLuz {
+  0%   { opacity: 0.75; transform: scale(1);    filter: drop-shadow(0 0 4px rgba(255,255,180,0.4)); }
+  25%  { opacity: 1;    transform: scale(1.03); filter: drop-shadow(0 0 10px rgba(255,255,180,0.7)); }
+  50%  { opacity: 0.82; transform: scale(1);    filter: drop-shadow(0 0 6px rgba(255,255,180,0.5)); }
+  75%  { opacity: 1;    transform: scale(1.04); filter: drop-shadow(0 0 12px rgba(255,255,180,0.8)); }
+  100% { opacity: 0.75; transform: scale(1);    filter: drop-shadow(0 0 4px rgba(255,255,180,0.4)); }
+}
+
+@keyframes moverBarra {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(15px); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes Cir {
+  0%   { transform: scale(1);   opacity: 0.3; }
+  50%  { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1);   opacity: 0.3; }
+}
+
+@keyframes cambioColor {
+  0%   { fill: rgba(0,0,0,0.523); }
+  50%  { fill: rgba(103,14,14,0.634); }
+  100% { fill: rgba(0,0,0,0.427); }
+}
+
+@keyframes moverNube {
+  0%   { transform: translateX(0) translateY(0); }
+  25%  { transform: translateX(400px) translateY(-8px); }
+  50%  { transform: translateX(800px) translateY(5px); }
+  75%  { transform: translateX(1200px) translateY(-6px); }
+  100% { transform: translateX(1600px) translateY(0); }
+}
+
+@keyframes flotarNube {
+  0%   { transform: translate(0px,0px) rotate(0deg); }
+  15%  { transform: translate(12px,-12px) rotate(0.5deg); }
+  35%  { transform: translate(-10px,-22px) rotate(-0.5deg); }
+  55%  { transform: translate(15px,-15px) rotate(0.4deg); }
+  75%  { transform: translate(-12px,-28px) rotate(-0.4deg); }
+  100% { transform: translate(0px,0px) rotate(0deg); }
+}
+
+@keyframes vientoArbol {
+  0%   { transform: rotate(0deg) translateX(0px); }
+  20%  { transform: rotate(0.8deg) translateX(3px); }
+  40%  { transform: rotate(-1deg) translateX(-4px); }
+  60%  { transform: rotate(0.7deg) translateX(3px); }
+  80%  { transform: rotate(-0.8deg) translateX(-2px); }
+  100% { transform: rotate(0deg) translateX(0px); }
+}
+
+@keyframes vientoArbol2 {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-1.5deg); }
+  50%  { transform: rotate(2deg); }
+  75%  { transform: rotate(-1.2deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes respirar {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-3px); }
+}
+
+@keyframes parpadeoGeneral {
+  0%   { opacity: 0; }
+  3%   { opacity: 0.6; }
+  6%   { opacity: 0; }
+  8%   { opacity: 0.4; }
+  10%  { opacity: 0; }
+  40%  { opacity: 0; }
+  42%  { opacity: 0.5; }
+  45%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes temblor {
+  0%   { transform: translate(0px,0px); }
+  10%  { transform: translate(-2px,1px); }
+  20%  { transform: translate(2px,-1px); }
+  30%  { transform: translate(-1px,2px); }
+  40%  { transform: translate(1px,-2px); }
+  50%  { transform: translate(-2px,-1px); }
+  60%  { transform: translate(2px,1px); }
+  70%  { transform: translate(-1px,-1px); }
+  80%  { transform: translate(1px,1px); }
+  90%  { transform: translate(-1px,0px); }
+  100% { transform: translate(0px,0px); }
+}
