@@ -218,7 +218,10 @@
   animation: titilar 5s infinite;
 }
 
-.contenedor2 #docBernal { width: 500px; position: absolute; top: 420px; left: 555px; }
+.contenedor2 #docBernal { width: 900px;
+    position: absolute;
+    top: 420px;
+    left: 555px; }
 
 .contenedor2 #botonsonido { position: absolute; width: 30px; top: 720px; left: 1220px; cursor: pointer; }
 
